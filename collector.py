@@ -3,7 +3,7 @@ import ADC0832
 import time
 import redis
 
-r = redis.Redis(host='redis-11762.c14.us-east-1-2.ec2.cloud.redislabs.com', port='11762', password='FJkK7k6uRB9YXogd')
+r = redis.Redis(host='redis-11762.c14.us-east-1-2.ec2.cloud.redislabs.com', port='11762', password='nope')
 
 def init():
         ADC0832.setup()
