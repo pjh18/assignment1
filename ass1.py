@@ -12,7 +12,7 @@ if 'VCAP_SERVICES' in os.environ:
     CREDENTIALS = VCAP_SERVICES["rediscloud"][0]["credentials"]
     r = redis.Redis(host=CREDENTIALS["hostname"], port=CREDENTIALS["port"], password=CREDENTIALS["password"])
 else:
-    r = redis.Redis(host='redis-11762.c14.us-east-1-2.ec2.cloud.redislabs.com', port='11762', password='FJkK7k6uRB9YXogd')
+    r = redis.Redis(host='redis-11762.c14.us-east-1-2.ec2.cloud.redislabs.com', port='11762', password='nope')
 
 app = Flask(__name__)
 my_uuid = str(uuid.uuid1())
